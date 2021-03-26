@@ -1,0 +1,32 @@
+<h1> About this project </h1>
+<a href ="{% url 'home' %}"> Home Page </a>
+
+<h2> I did this project to get a basic understanding of django</h2>
+
+<h3> In this project, you can enter a text and it will return the count of words
+  in the text in descending order.
+</h3>
+
+<h4>
+  We created url paths in the urls.py, and functions that use the HttpResponse argument
+  to return render, linking the page to the url and other results. Such as <br/>
+  <h5>
+    count - which displayed the number of total words found in the text.<br/><br/>
+
+    SortedWords - which requested the "full text" which the user entered
+    in the homepage. We created a dictionary. <br/><br/>
+    The data was then parsed and added to a dictionary with the form {"word" : count}
+    if the word was already found in the dictionary, we increased the count
+    to reflect the count of word.<br/>
+
+    fulltext - which is not displayed in the "count.html" page, but does allow us to displayed
+    the full text the user entered if we desired.<br/>
+  </h5>
+  Please note, the actual count of words my be slighty skewed.
+  <h5>
+    This is due to the fact that we did not remove special characters, as the purpose of This
+    website is to merely begin to learn Django and develop a functioning website <br/>
+    A more precise count will be implemented in a future version as it is
+    basic python coding.
+  </h5>
+</h4>
